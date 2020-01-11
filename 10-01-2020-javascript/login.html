@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+    <head>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td id="u_n" class="user"><input type="text" name="un" id="un"></td>
+            </tr>
+            <tr>
+                <td>password:</td>
+                <td id="u_n" class="user"><input type="text" name="pas" id="pas"></td>
+            </tr>
+            <tr>
+                <td>confirm password:</td>
+                <td id="u_n" class="user"><input type="text" name="cnpas" id="cnpas"></td>
+            </tr>
+            <tr>
+                <td><button onclick="check()">Submit</button></td>
+            </tr>
+            <tr><td><p id="p1"></p></td></tr>
+        </table>
+        
+    </body>
+    <script>
+         document.getElementById(p1).innerHTML.value="Password parameters donot match";
+        function check(){
+           
+            var un=document.getElementById("un").value;
+            var pass=document.getElementById("pas").value;
+            var cnpass=document.getElementById("cnpas").value;
+            console.log(un,pass,cnpass);
+            var re1=/[a-z]/;
+            var re2=/[A-Z]/;
+            var re3=/[\@\*\$]/;
+            var re4=/abc/;
+            if((pass==cnpass)&&pass.length>8&&(re1.test(pass))&&(re2.test(pass))&&(re3.test(pass))&&(re4.test(pass))){
+                console.log(un,pass);
+                alert("Login success");
+            }
+            else {
+                alert("Password Parameters not satisfied");
+ 
+            }
+
+            
+        }
+    </script>
+</html>

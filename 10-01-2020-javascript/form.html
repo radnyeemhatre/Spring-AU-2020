@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .data{
+            font-size:12px;
+            color:rgb(216, 44, 44);
+            
+        }
+        </style>
+    </head>
+    <body>
+        <div>Name:<input type="text" name="name" id="name"></div>
+        <p></p>
+        <div>Country: <select name="cars">
+                <option>India</option>
+                <option>China</option>
+                <option>England</option>
+                <option>America</option>
+              </select></div>
+            <p></p>
+        Username: <input type="text" id="inp" onchange="filterdata()"> (make sure cursor is not active in input field to filter data)  
+        
+        <div id="data" class="data" >
+        </div>
+        <p></p>
+        <div><button onclick="sort()">Sort</button></div>
+        <div id="data1" class=data></div>
+    </body>
+    <script>
+           
+            var arr=['cooldude56','coolapu76','trickster.wow','bob.mare.aur.mai.na.maaru','harsil90uy','imswaagger'];
+            document.getElementById("data").innerHTML=arr.join("  ,  ");
+            document.getElementById("data1").innerHTML=arr.join("  ,  ");
+            function filterdata(){
+               
+                k=document.getElementById("inp").value;
+                var arr1=arr.filter((item)=>{
+                    reg1 = new RegExp(k);
+                   
+                   return reg1.test(item);
+                })
+               
+                document.getElementById("data").innerHTML=arr1.join("  ,  ");
+            }
+            function sort()
+            {
+                document.getElementById("data1").innerHTML=arr.sort().join("  ,  ");
+            }
+        </script>
+</html>

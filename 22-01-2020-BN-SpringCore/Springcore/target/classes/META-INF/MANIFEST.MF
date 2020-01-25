@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: RADNYEE
+Build-Jdk: 10.0.2
+Implementation-Title: demo1
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.sprigau.demo1
+Implementation-Vendor: Pivotal Software, Inc.
+Created-By: Maven Integration for Eclipse
+

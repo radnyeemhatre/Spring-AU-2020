@@ -1,0 +1,7 @@
+application:
+  name: aop1
+  package: com.sprigau.aop.aop1
+spring:
+  application:
+    name: ${application.name}
+

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.sprigau.aop.aop1","l":"App"},{"p":"com.springau.aop.model","l":"Employee"},{"p":"com.springau.aop.aspects","l":"EmployeeAspect"},{"p":"com.springau.aop.services","l":"EmployeeManager"}]

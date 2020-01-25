@@ -1,0 +1,4 @@
+com\springau\aop\model\Employee.class
+com\springau\aop\services\EmployeeManager.class
+com\springau\aop\aspects\EmployeeAspect.class
+com\sprigau\aop\aop1\App.class

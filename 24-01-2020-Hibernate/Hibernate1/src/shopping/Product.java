@@ -5,7 +5,7 @@ import java.util.*;
 import javax.persistence.*;
 @Entity
 @Table(name="PRODUCT_DETAILS")
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @NamedQueries({
 	@NamedQuery(  
 	        name = "ProductById",  

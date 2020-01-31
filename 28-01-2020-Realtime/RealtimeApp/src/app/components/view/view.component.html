@@ -1,0 +1,17 @@
+<table *ngIf="users ">
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+
+    </tr>
+    <tr *ngFor="let u of users|keyvalue">
+        <td>{{u.value.id}}</td>
+        <td>{{u.value.name}}</td>
+        <td>{{u.value.email}}</td>
+        <td>{{u.value.contact}}</td>
+    </tr>
+</table>
+
+

@@ -1,0 +1,30 @@
+
+<form [formGroup]="userDetails" (ngSubmit)="onSubmit()" (change)="check()">
+    <table>
+        <tr>
+            <td> id:</td>
+            <td><input type="number" formControlName="id"  ></td>
+            
+        </tr>
+        <tr>
+              <td> Name:</td>
+              <td><input type="text" formControlName="name"  ></td>
+              <td class="err">{{errname}}</td>
+          </tr>
+          <tr>
+                  <td> Email:</td>
+                  <td><input type="text" formControlName="email" ></td>
+                  <td class="err">{{erremail}}<td></td>
+          </tr>
+          <tr>
+                  <td> Contact:</td>
+                  <td><input type="number" formControlName="contact" ></td>
+                  <td class="err">{{errcon}}<td></td>
+          </tr>      
+    </table>
+    <button  type="submit" [disabled]="((!userDetails.valid)|| (!formValid))">Submit</button>
+    
+  </form>
+  
+  
+  
